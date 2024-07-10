@@ -28,3 +28,8 @@ data.boxplot(figsize=(12, 8))
 plt.title('Boxplot of Variables')
 plt.show()
 
+# Heatmap to visualize correlations
+plt.figure(figsize=(10, 8))
+sns.heatmap(data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Heatmap')
+plt.show()
